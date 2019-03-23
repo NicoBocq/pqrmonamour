@@ -1,3 +1,5 @@
+// <img src={logo} className="App-logo" alt="logo" />
+
 const quotes = [
   {author: "Boss Dog, Bob Ross",
   content: "There are no mistakes, only happy accidents."},

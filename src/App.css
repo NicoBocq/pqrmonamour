@@ -15,15 +15,20 @@ a { text-decoration: none; color: #FFF; }
 }
 
 .App-btn {
-  border-radius:2px;
+  border-radius:5px;
   background: #FFF;
   padding: 2vmin;
   font-size: calc(10px + 1vmin);
 }
 
+.App-btn:hover {
+  opacity: 0.9;
+ }
+
 button.App-btn {
   color:#282c34;
   text-decoration: none;
+  cursor:pointer;
 }
 
 .App-header {
@@ -37,10 +42,16 @@ button.App-btn {
   color: white;
 }
 
+.App-header h1 {
+  padding: 15px;
+}
+
 .App-footer {
   min-height: 10vh;
   font-size: calc(8px + 1vmin);
   text-align:right;
+  color:#FFF;
+  margin-right:1vmin;
 }
 
 .App-link {
