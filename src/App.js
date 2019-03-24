@@ -23,7 +23,8 @@ const locations = [
 'Saint Germain au Mont d\'Or',
 'Valence',
 'Issy-les-Moulineaux',
-'Marseille'
+'Marseille',
+'Le Pontet'
 ];
 
 const subjects = [
@@ -60,19 +61,14 @@ class App extends Component {
      quote: 'Générer votre titre #pqrmonamour'
   }
 
-  wordPick() {
-     const word =
-      words[Math.floor(Math.random() * words.length)];
-      console.log(word);
+  randomPick(array) {
+      return array[Math.floor(Math.random() * array.length)];
   }
 
   handleClick = () => {
-    const location =
-      locations[Math.floor(Math.random() * locations.length)];
-    const subject =
-      subjects[Math.floor(Math.random() * subjects.length)];
-    const verbe =
-      verbes[Math.floor(Math.random() * verbes.length)];
+    const location = this.randomPick(locations);
+    const subject = this.randomPick(subjects);
+    const verbe = this.randomPick(verbes);
 
     this.setState({
          quote: location + ' : '+ subject + ' ' + verbe }); //new quote
