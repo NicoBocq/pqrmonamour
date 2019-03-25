@@ -2,16 +2,6 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
-const words = ["Nancy : il mord les testicules du contrôleur dans le train",
-"Perpignan : cachée dans un caveau, elle découvre que la pilleuse de tombes est une sexagénaire fortunée",
-"Oise : il prend sa belle-mère pour un lapin et lui tire dessus",
-"Elle surprend un homme en train de se secouer la quéquette sur la route",
-"Digne : ils ont uriné dans le manège",
-"Speedating au cyclorail : un bilan mitigé",
-"L'automobiliste faisait du yoga nu sur la bande d'arrêt d'urgence",
-"Reims : nu, il broutait de l'herbe en pleine rue"
-];
-
 const locations = [
 'Saint-Michel-Chef-Chef',
 'Courthézon',
