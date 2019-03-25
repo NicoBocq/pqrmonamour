@@ -58,12 +58,16 @@ const verbes = [
 class App extends Component {
 
   state = {
-     quote: 'Générer votre titre #pqrmonamour'
+     title: 'Générer votre titre #pqrmonamour'
   }
 
-  randomPick(array) {
-      return array[Math.floor(Math.random() * array.length)];
+  randomPick = (array) => {
+    return array[Math.floor(Math.random() * array.length)];
   }
+
+  // fetch('https://jsonplaceholder.typicode.com/users')
+  //   .then(response => response.json())
+  //   .then(data => console.log(JSON.stringify(data)))
 
   handleClick = () => {
     const location = this.randomPick(locations);
@@ -71,7 +75,7 @@ class App extends Component {
     const verbe = this.randomPick(verbes);
 
     this.setState({
-         quote: location + ' : '+ subject + ' ' + verbe }); //new quote
+         title: location + ' : '+ subject + ' ' + verbe }); //new title
   }
 
   render() {
@@ -79,7 +83,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>
-            {this.state.quote}
+            {this.state.title}
           </h1>
           <button
             className="App-btn"

@@ -1,6 +1,7 @@
 {
   "name": "pqrmonamour",
   "version": "0.1.0",
+  "homepage" : "http://pqrmonamour.herokuapp.com",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
